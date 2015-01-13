@@ -1,0 +1,24 @@
+body.full-width #header, #nav-container, body.full-width #content, body.full-width #footer-widgets, body.full-width #footer {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.two-col-left #main-sidebar-container #sidebar, 
+.two-col-right #main-sidebar-container #sidebar {
+	@include breakpoint(medium-desktop-up) {
+		width: 29.2%;
+	}
+		@include box-sizing(border-box);
+}
+
+.two-col-left #main-sidebar-container #main, 
+.two-col-right #main-sidebar-container #main {
+	@include breakpoint(medium-desktop-up) {
+		width: 70.8%;
+		padding-left: 30px;
+	}
+		@include box-sizing(border-box);
+}
+
+#content {
+	padding-bottom: 0;
+}

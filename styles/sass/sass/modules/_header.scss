@@ -1,0 +1,315 @@
+/* =====================
+	Header Style 
+======================== */
+#header-container {
+	background-color: $white;
+	border-top: 3px solid $green;
+}
+
+#header { padding: 10px 0 0; }
+	/* Nav Toggle Style
+	======================== */
+	.nav-toggle {
+
+	}
+	/* Header Logo
+	======================== */
+	#logo {
+		@include breakpoint(ipad-up) {
+			margin-bottom: -71px;
+			position: relative;
+			z-index: 9;
+			margin-left: -28px;
+		}
+	}
+	/* =====================
+		Header Widget Right 
+	======================== */
+	.header-widget {
+		@include breakpoint(ipad-up) {
+			width: 100%;
+			margin-left: -214px;
+			padding-left: 214px;
+			display: table;
+			margin-top: 6px;
+		}
+		@include box-sizing(border-box);
+		.header-welcome-text {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+
+			h2 {
+				color: $green;
+				font-family: $fredoka_one;
+				font-size: 26px;
+			}
+		}
+		.widget {
+			text-align: right;
+			display: table-cell;
+			vertical-align: middle;
+			> h3 {
+				display: none;
+			}
+			p {
+				line-height: 24px;
+				font-size: 16px;
+				margin-bottom: 0;
+				font-family: $lato_bold;
+			}
+			a {
+				color: $orange;
+				text-decoration: underline;
+				font-family: $lato_bold;
+			}
+		}
+
+	}
+
+	/* =====================
+		Navigation Style 
+	======================== */
+	#nav-container {
+		border: 0;
+		background: #ffdf06;
+		@include background-image(linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 0%, #fffbde 5%, #ffdf06 100%));
+		margin-bottom: 0;
+		@include breakpoint(ipad-up) {
+			position: relative;
+			z-index: 1;
+		}
+		#navigation ul#main-nav > li:first-child {
+			border-left: 0;
+		}
+	}
+		#navigation .nav li.parent > a:after {
+			display: none;
+		}
+		#navigation {
+			@include breakpoint(ipad-up) {
+				background: none;
+				padding-left: 184px;
+			}
+			@include breakpoint(ipad) {
+				background: #f6f0c1;
+			}
+			h3 {
+				color: #fff;
+				font-size: 18px;
+				font-weight: normal;
+				padding: 15px 10px;
+			}
+			ul.nav {
+				background: none;
+				margin-right: 0;
+
+				ul {
+					background: rgba(12, 60, 100, 0.7);
+
+					li {
+						a {
+							color: $white !important;
+
+							&:hover {
+								text-decoration: none;
+								background: #467095 !important;
+							}
+						}
+					}
+				}
+				> li:hover, > li a:hover{
+					background: none;
+					
+				}
+				> li a:hover {
+				 	color: #2262A3;
+				}
+			}
+
+		}
+			ul.nav {
+				@include breakpoint(ipad-up) {
+					display: table;
+				}
+				@include breakpoint(ipad) {  
+					padding: 0 20px;
+				}
+				width: 100%;
+				li {
+					float: none;
+					@include breakpoint(ipad-up) {
+						display: table-cell;
+					}
+					vertical-align: middle;
+					text-align: center;
+					@include breakpoint(ipad) { 
+						text-align: left;
+					}
+					a {
+						color: $blue;
+						text-transform: capitalize;
+						font-size: 15px;
+						padding-top: 16px !important;
+						padding-bottom: 16px !important;
+						padding: 0 4px;
+						font-family: $fredoka_one;
+					}
+					&.current_page_item {
+						background: none;
+					}
+
+					&.current_page_item,
+					&.current_page_parent, 
+					&.current-menu-ancestor,
+					&.current-cat,  
+					&.current-menu-item {
+						a {
+							background: none;
+							color: $white;
+						}
+					}
+				}
+			}
+
+/* =====================
+		Slider Style 
+	======================== */
+body.full-header.full-slider #loopedSlider {
+	margin-top: 0em; 
+}
+.homepage-banner {
+	background-image: image-url("banner.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	&.def-page {
+		margin-bottom: 0;
+		background-position: center bottom;
+	}
+	.page-title, .phone-num {
+		line-height: 100%;
+		margin-bottom: 0;
+		color: $white;
+		font-size: 16px;
+		font-family: $lato_reg;
+		font-weight: normal;
+		padding: 30px 0;
+		text-shadow:2px 2px 4px #333333;
+		letter-spacing: 2px;
+	}
+	.page-title {
+		float: left;
+	}
+	.phone-num {
+		float: right;
+		@include breakpoint(mobile-landscape) {
+			display: none;
+		}
+	}
+
+}
+
+
+.main-slider  {
+
+	width: 100%;
+	margin: 0px auto;
+	min-height: 332px;
+	padding: 20px 0;
+	margin-bottom: 50px;
+	@include breakpoint(mobile-landscape) {
+		min-height: 242px;
+	}
+		#loopedSlider {
+	
+			overflow: visible;
+			margin-bottom: 0;
+			-webkit-box-shadow: 0px 0px 14px -3px rgba(2,2,2,1);
+			-moz-box-shadow: 0px 0px 14px -3px rgba(2,2,2,1);
+			box-shadow: 0px 0px 14px -3px rgba(2,2,2,1);
+		.biz-slider-image {
+			height: 332px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			@include breakpoint(mobile-landscape) {
+				height: 242px;
+			}
+		}
+		a.flex-prev , a.flex-next {
+			@include breakpoint(custom-viewport){
+				width: 40px;
+				height: 80px;
+				top: 50%;
+				display: block;
+				margin-top: -40px;
+				border: 0px;
+				border-radius: 0px;
+				background-image: image-url("arrows.png");
+				background-repeat: no-repeat;
+				span {
+					display: none;
+				}
+			}
+
+		}
+		a.flex-next {
+			@include breakpoint(custom-viewport){
+				right: -40px;
+			}
+		}
+		a.flex-prev {
+			@include breakpoint(custom-viewport){
+				left: -40px;
+				background-position: -40px 0;
+			}
+		}
+	}
+}
+
+	@-webkit-keyframes fadeIn { 
+	    0% {opacity: 0;} 
+	    100% {opacity: 1;} 
+	} 
+	@keyframes fadeIn { 
+	    0% {opacity: 0;} 
+	    100% {opacity: 1;} 
+	} 
+	.flex-viewport {
+		-webkit-animation-duration: 1s; 
+	    animation-duration: 1s; 
+	    -webkit-animation-fill-mode: both; 
+	    animation-fill-mode: both; 
+	    -webkit-animation-name: fadeIn; 
+		animation-name: fadeIn; 
+	}
+	#loopedSlider .content {
+		padding: 0;
+	}
+	.full-slider #loopedSlider.business-slider .content {
+		.title {
+			text-align: left;
+			padding: 6px 20px 10px;
+		}
+		h2 {
+			line-height: 100%;
+			font-size: 20px;
+			padding: 10px 0;
+		}
+		p {
+			font-size: 14px;
+			padding: 0;
+			color: $white;
+			line-height: 100%;
+		}
+	}
+
+	.default-page-banner {
+		height: 60px;
+		background-image: image-url("cloud.jpg");
+		background-position: top top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}

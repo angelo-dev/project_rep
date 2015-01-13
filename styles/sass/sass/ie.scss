@@ -1,0 +1,47 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+.ie {
+
+	.header-widget {
+		width: 100%;
+		margin-left: -214px;
+		padding-left: 214px;
+		display: table;
+		margin-top: 6px;
+	}
+	#nav-container {
+		margin-bottom: 0;
+	}
+	#navigation {
+		background: none;
+	}
+	ul.nav {
+		display: table;
+		width: 100%;
+		float: none;
+		li {
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+		}
+	}
+
+	.two-col-left #main-sidebar-container #sidebar, 
+	.two-col-right #main-sidebar-container #sidebar {
+		
+		width: 29.2%;
+		
+	}
+
+	.two-col-left #main-sidebar-container #main, 
+	.two-col-right #main-sidebar-container #main {
+			width: 70.8%;
+			padding-left: 30px;
+			
+	}
+
+}

@@ -1,0 +1,54 @@
+/* Footer Style
+==================*/
+#footer-container {
+	padding: 130px 0 220px;
+	background-image: image-url("cloud2.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: $black;
+	font-size: 14px;
+	-webkit-box-shadow: inset 0px 218px 214px -72px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 218px 214px -72px rgba(255,255,255,1);
+	box-shadow: inset 0px 218px 214px -72px rgba(255,255,255,1);
+
+
+}
+#footer {
+	overflow: hidden;
+	padding: 6px 0;
+	border-top: 0;
+	.col-right {
+		display: none;
+	}
+	.col-left {
+		float: none;
+	}
+
+	.menu {
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			border-right: 1px solid $black;
+			&:last-child {
+				border: 0;
+			}
+		}
+		a {
+			color: $black;
+			font-size: 14px;
+			display: block;
+			padding: 0 5px;
+			font-family: $lato_bold;
+		}
+	}
+}
+
+#copyright {
+	margin-top: 20px;
+	p {
+		font-size: inherit;
+		font-family: $lato_bold;
+	}
+}

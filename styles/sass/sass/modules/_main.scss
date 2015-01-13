@@ -1,0 +1,102 @@
+/* Main Section Style
+================= */
+.business {
+	background-image: image-url("cloud.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* 3 col text 
+================= */
+.featured-articles {
+	margin-top: -22px;
+	margin-bottom: -100px;
+	position: relative;
+	z-index: 10;
+	padding: 0 20px;
+	.widget {
+		width: 33.33%;
+		float: left;
+		position: relative;
+		@include box-sizing(border-box);
+		padding-left: 75px;
+
+		@include breakpoint(ipad) {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+		.tooth-icon {
+			position: absolute;
+			left: 0;
+			top: -13px;
+			display: block;
+			height: 118px;
+			width: 77px;
+			border: 0;
+		}
+		.widget-title {
+			color: $blue;
+			background: image-url("border-small.png")  no-repeat left bottom;
+			border: 0;
+			font-family: $fredoka_one;
+			margin-bottom: 10px;
+		}
+		.textwidget {
+			line-height: 17px;
+		}
+	}
+	/* Read more button
+	================= */
+	.bottom-link {
+		margin-top: 20px;
+		a {
+			background: $violet;
+			color: $white;
+			display: block;
+			font-family: $fredoka_one;
+			margin: 0 auto;
+			padding: 10px 0;
+			text-align: center;
+			width: 150px;
+			@include border-radius(2px);
+
+			&:hover {
+				text-decoration: none;
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+#content {
+
+}
+.home.page {
+	#main {
+		margin-top: 0;
+	}
+}
+#main {
+	margin-top: 35px;
+	header {
+		position: relative;
+		padding-left: 88px;
+		.page-title-icon {
+			position: absolute;
+			display: block;
+			width: 87px;
+			height: 118px;
+			top: -22px;
+			left: 0;
+			background-position: left center;
+			background-repeat: no-repeat;
+			text-indent: -99999px;
+			z-index: -1;
+		}
+	}
+	.entry {
+		padding-left: 40px;
+	}
+}

@@ -1,0 +1,48 @@
+#sidebar {
+	min-height: 520px;
+	padding: 40px 30px 20px;
+	background-image: image-url("sidebar.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+
+	.widget {
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h3 {
+			margin: 0 0 10px;
+			padding: 0 0 20px 5px;
+			color: $black;
+			border-bottom: 0px;
+			font-family: $fredoka_one;
+			background: image-url("border-small.png") no-repeat bottom left;
+
+		}
+		ul {
+			padding-left: 0px;
+			padding-right: 30px;
+			li {
+				border-bottom: 3px solid #f1de99;
+				a {
+					padding: 4px 10px;
+				}
+			}
+		}
+		a {
+			color: $black;
+			font-family: $fredoka_one;
+			color: $black;
+			font-size: 15px;
+			display: inline-block;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+}
+#wrapper #sidebar {
+	margin-top: -2px;
+}

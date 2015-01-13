@@ -1,0 +1,91 @@
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 15px; }
+h6 { font-size: 13px; }
+h1, h2, h3, h4, h5, h6, strong, b {
+	font-family: $lato_bold;
+	font-weight: normal;
+}
+a {	font-family: $lato_reg; }
+p, li {
+	color: $black;
+	font-family: $lato_reg;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.widget, .entry {
+
+	h1 { font-size: 24px; }
+	h2 { font-size: 22px; }
+	h3 { font-size: 18px; }
+	h4 { font-size: 16px; }
+	h5 { font-size: 15px; }
+	h6 { font-size: 13px; }
+
+	h1, h2, h3, h4, h5, h6, strong, b {
+		font-family: $lato_bold;
+		font-weight: normal;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	p, li, section, div, article {
+		color: $black;
+		font-family: $lato_reg;
+		font-size: 14px;
+	}
+
+	table {
+		box-shadow: 0 0px 0px 0 transparent;
+		-webkit-box-shadow: 0 0px 0px 0 transparent;
+		td, th {
+			background: #0c3c64;
+			border-right: 1px dotted #fff;
+			color: $white;
+			font-family: $lato_reg;
+			font-size: 14px;
+		}
+		tbody td {
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+.entry {
+	color: $black;
+	font-family: $lato_reg;
+	font-size: 14px;
+	ul, ol {
+		padding-left: 20px;
+	}
+
+	p, li, section, div, article {
+		font-size: 16px;
+	}
+}
+
+ .page .title {
+ 	font-size: 24px;
+ 	font-family: $fredoka_one;
+	font-weight: normal;
+	color: #0c3c64;
+	padding-bottom: 20px;
+	background: image-url("border-large.png") no-repeat bottom left;
+	margin-bottom: 30px;
+ }
+
+form {
+
+	input, textarea {
+		color: $black;
+		font-family: $lato_reg;
+		font-size: 14px;
+		border: 1px solid $black;
+	}
+}

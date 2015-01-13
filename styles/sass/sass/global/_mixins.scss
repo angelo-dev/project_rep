@@ -1,0 +1,32 @@
+// @mixin set-sprite-dimensions( $map, $name ) { 
+// 	 $file: sprite-file($map, $name);
+// 	 width: image-width( $file );
+// 	 height: image-height( $file );
+// }
+
+@mixin breakpoint($point) {
+  @if $point == custom-viewport {
+    @media (min-width: 1060px)  { @content; }
+  }
+  @if $point == medium-desktop-up {
+    @media (min-width: 980px)  { @content; }
+  }
+  @if $point == medium-desktop {
+    @media (max-width: 979px)  { @content; }
+  }
+  @if $point == desktop {
+    @media (max-width: 939px)  { @content; }
+  }
+  @else if $point == ipad-up {
+    @media (min-width: 768px)  { @content; }
+  }
+  @else if $point == ipad {
+    @media (max-width: 767px)  { @content; }
+  }
+  @else if $point == mobile-landscape {
+    @media (max-width: 640px)  { @content; }
+  }
+  @else if $point == mobile-portrait {
+    @media (max-width: 380px)  { @content; }
+  }
+}
